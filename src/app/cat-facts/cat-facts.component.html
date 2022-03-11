@@ -1,8 +1,8 @@
 <div class="wrapper">
     <div class="content-box">
         <h1 class="title" >Daily Cat Fact</h1>
-        <h2 class="content">{{fact}}</h2>
-        <button (click)="changeFact()" class="fact-button">Another fact</button>
+        <h2 class="content">{{(fact | async)?.text}}</h2>
+        <button (click)="changeFact()" class="button">Another fact</button>
     </div>
 </div>
 

@@ -1,0 +1,26 @@
+.example-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20vh;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+.username-form {
+    width: 225px;
+}
+
+.password-form {
+    width: 225px;
+}
+
+.button {
+    padding: 0;
+    border: none;
+}

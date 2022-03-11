@@ -22,9 +22,10 @@ h2 {
 
 .content-box {
     text-align: center;
+    margin: auto;
 }
 
-.fact-button {
+.button {
     padding: 0.75rem 1rem;
     background-color: transparent;
     display: inline-block;
@@ -38,6 +39,6 @@ h2 {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-.fact-button:hover {
+.button:hover {
     background-color: rgba(255,255,255,0.30);
 }
