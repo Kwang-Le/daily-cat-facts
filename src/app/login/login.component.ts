@@ -11,7 +11,6 @@ export class LoginComponent implements OnInit {
   hide = true;
   user: string = "";
   password: string = "";
-  loading = false;
   constructor(
     private router: Router,
     private authenticationservice: AuthenticationService,
@@ -24,7 +23,6 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
     if(this.authenticationservice.logIn(this.user, this.password)){
-      this.loading = true;
       this.router.navigate(['/cat-fact']);
     }
   }

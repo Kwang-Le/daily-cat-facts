@@ -13,7 +13,7 @@ import { AuthenticationService } from '../authentication.service';
 export class CatFactsComponent implements OnInit {
 
   fact!: Observable<any>;
-  loggedIn = false;
+  loggedIn = true;
   constructor(
     private catFactsService: CatFactsService,
     private router: Router,
@@ -21,7 +21,7 @@ export class CatFactsComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.check();
+   // this.check();
     this.getFact();
     console.log(this.authenticationservice.token);
   }
